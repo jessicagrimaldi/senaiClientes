@@ -1,4 +1,4 @@
-# Lógica de Programação - SENAI
+# Codificação Back-end - SENAI
 Sistema de cadastro de clientes desenvolvido para atividade referente a unidade de Codificação Back-end do curso de programação back-end (SENAI) 
 
 #### Características:
