@@ -1,19 +1,48 @@
-# Codificação Back-end - SENAI
-Sistema de cadastro de clientes desenvolvido para atividade referente a unidade de Codificação Back-end do curso de programação back-end (SENAI) 
+# Senai Clientes
+Sistema de cadastro de clientes que armazena cadastros das pessoas físicas e jurídicas.
 
-#### Características:
+### Features
 
--O sistema de clientes deverá armazenar os cadastros das pessoas físicas e jurídicas;
+Cadastro de Pessoa Física 
 
--O cadastro das pessoas físicas é feito com os seguintes dados: nome, CPF e data de nascimento;
+Cadastro de Pessoa Jurídica
 
--O cadastro das pessoas jurídicas é feito com os seguintes dados: nome, CNPJ e razão social;
+Armazenamento de Registro em Arquivos
 
--Ambos devem possuir um endereço e indicar se o endereço é comercial ou residencial;
+### Tecnologias Utilizadas
 
--O sistema deve armazenar os registros em arquivos; 
+**Back-End:** C# | .NET 
 
--Valores não permitidos inseridos pelos usuários devem ser tratados; 
+**IDE:** Visual Studio Code
+
+**Versionamento:** Git
+
+### Pré Requisitos de Instalação
+att 
+
+### Execução
+
+**Clone o repositório:** git clone https://github.com/jessicagrimaldi/senaiClientes.git
+  
+**Entre no diretório:** cd [nome-projeto]
+
+**Execute o projeto:** dotnet run
+
+
+--
+
+O cadastro das pessoas físicas é feito com os seguintes dados: nome, CPF e data de nascimento;
+
+O cadastro das pessoas jurídicas é feito com os seguintes dados: nome, CNPJ e razão social;
+
+Ambos devem possuir um endereço e indicar se o endereço é comercial ou residencial;
+
+O sistema deve armazenar os registros em arquivos; 
+
+Valores não permitidos inseridos pelos usuários devem ser tratados; 
+
+
+
 
 #### Status da Atividade: 
 
