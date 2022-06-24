@@ -1,28 +1,40 @@
-namespace clientesPFePJ
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
+namespace senaiClientes
 {
-public class PessoaFisica:Pessoa
+    public class PessoaFisica : Pessoa  // Indica que está herdando dados da classe Pessoa
+    {
+        public string cpf { get; set; }
+        public DateTime dataNascimento { get; set; }
 
-{
-    public string cpf {get;set;}
-
-    public DateTime dataNascimento {get;set;}
-
-    public bool ValidarDataNascimento (DateTime dataNasc) {
-        DateTime dataAtual = DateTime.Today;
-
+        public override double PagarImposto(float rendimento)
+        {
+            if(rendimento <= 1500){
+                return 0;
+            } else if(rendimento > 1500 && rendimento <= 5000){
+                return rendimento * .03;
+            }else{
+                return (rendimento / 100)* 5;
+            }
         
-    double anos = (dataAtual - dataNasc).TotalDays / 365;
+        }
 
-       if (anos>=18) {
-           return true;
+        public bool ValidarDataNascimento (DateTime dataNasc) {
+        DateTime dataAtual = DateTime.Today;        
+        double anos = (dataAtual - dataNasc).TotalDays / 365;
 
-        } else {
-            return false;
+        if (anos>=18) {
+            return true;
+
+            } else {
+                return false;
 
         }
     }
 
-}
-
+        
+    }
 }

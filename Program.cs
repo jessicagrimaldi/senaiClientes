@@ -1,74 +1,97 @@
-using System;
+﻿using System;
 
-namespace clientesPFePJ
-
+namespace senaiClientes
 {
-
-    class Program
-
-    {
-        static void Main(string)[] args)
-
-        {   //PARA PESSOA FÍSICA
-            Endereco end = new Endereco();
-            end.logradouro = "Rua Mario";
-            end.numero = 30;
-            end.complemento = "Próximo ao Mercado Extra"
-            end.enderecoComercial = false;
-
-            PessoaFisica novapf = new PessoaFísica();
-            novapf.endereco = end;
-            novapf.cpf = "85618590473"
-            novapf.dataNascimento =new DateTime(1994,05,19);
-            novapf.nome = "Pessoa Física"
+    class Program{
+        static void Main(string[] args)
+        {
+          // Instanciando o objeto diretamente:
+            // Endereco end = new Endereco();
+            // end.logradouro = "Rua Mário";
+            // end.Numero = 29;
+            // end.complemento = "Próximo ao Mercado Extra";
+            // end.enderecoComercial =  false;
             
-            //console.Writeline(novapf.endereco.logradouro)
-            //console.Writeline(novapf.endereco.numero)
+            // PessoaFisica novapf = new PessoaFisica();
+            // novapf.endereco = end;
+            // novapf.cpf = "12345";
+            // novapf.dataNascimento = new DateTime (1992, 11, 29);
+            // novapf.nome = "Jessi";
 
-            console.Writeline($"Rua: {novapf.endereco.logradouro}, {novapf.endereco.numero}");
+            // Console.WriteLine(novapf.endereco.logradouro);
+            // Console.WriteLine(novapf.nome);
 
-            PessoaFisica pf =  new PessoaFisica();
-            // console.Writeline(pf.ValidarDataNascimento(pf.dataNascimento));
+  // Solicitando informação ao usuário:
+      string? opcao;
+      do
+      {
+        Console.WriteLine(@$"
+      ****************************************************************
+      *              CADASTRO PESSOAS FÍSICAS E JURÍDICAS            *
+      ****************************************************************
+      *               Escolha uma das opções abaixo                  *
+      *               1 - Cadastrar                                  *
+      *               0 - Sair                                       *
+      ****************************************************************
+      ");
+        opcao = Console.ReadLine();
+        switch (opcao)
+        {
+          case "1":
+            Endereco endPf = new Endereco();
+            Console.WriteLine($"Digite seu Logradouro");                
+            endPf.logradouro = Console.ReadLine();
+            Console.WriteLine($"Digite o Numero");
+            endPf.Numero = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Digite o Complemento (Pressione ENTER para vazio)");
+            endPf.complemento = Console.ReadLine();
+            Console.WriteLine($"Este endereço é comercial? S/N");
+            string enderecoComercial = Console.ReadLine().ToUpper();
 
-            bool idadeValida = pf.ValidarDataNascimento(novapf.dataNascimento);
-            console.Writeline(idadeValida);
-
-            if (idadeValida == true)
-
+            if (enderecoComercial == "S" )
             {
-                System.console.Writeline($"Cadastro Aprovado");
-
+              endPf.enderecoComercial = true;
+            }
+            else{
+              endPf.enderecoComercial = false;
             }
 
+            PessoaFisica novapf = new PessoaFisica();
+            novapf.endereco = endPf;
 
-            else { 
-                console.Writeline($"Cadastro Reprovado")
-            }
+            Console.WriteLine($"Digite seu CPF (somente números)");
+            novapf.cpf = Console.ReadLine();
 
-            //PARA PESSOA JURIDICA
+            Console.WriteLine($"Digite seu Nome");
+            novapf.nome = Console.ReadLine();
 
-            Endereco end = new Endereco();
-            end.logradouro = "Rua Mario";
-            end.numero = 30;
-            end.complemento = "Próximo ao Mercado Extra"
-            end.enderecoComercial = true;
 
-            PessoaJuridica novapj = new PessoaJuridica();
-            novapj.endereco = end;
-            novapj.cnpj = "12345678990001";
-            novapj.razaoSocial = "LTDA";
+            Console.WriteLine($"Digite sua data de nascimento [AAAA,MM,DD");
+            novapf.dataNascimento = DateTime.Parse(Console.ReadLine());     
 
+           StreamWriter sw = new StreamWriter($"{novapf.nome}.txt");
+           sw.Write($"{novapf.nome},{novapf.cpf}, {novapf.dataNascimento}, {novapf.endereco.logradouro}, {novapf.endereco.Numero} ");
+           sw.Close();
+            break;
             
-            if (pj.ValidarCNPJ(novacnpj.cnpj)) 
-            {
-                console.Writeline("CNPJ Válido");
-             }
-             else
-             {
-                 console.Writeline("CNPJ Inválido")
-             }
-            
+          case "0":
+            Console.WriteLine(@$"
+      ****************************************************************
+      *           Obrigada por utilizar o nosso sistema!             *
+      ****************************************************************
+      ");
+            break;
+
+          default:
+            Console.WriteLine("Opção inválida, digite uma opção valida");
+            break;
         }
 
+      } while (opcao != "0");
+
+
+
+
+        }
     }
 }

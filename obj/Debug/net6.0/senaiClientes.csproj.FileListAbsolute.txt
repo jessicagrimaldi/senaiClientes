@@ -1,0 +1,15 @@
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.csproj.AssemblyReference.cache
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.AssemblyInfoInputs.cache
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.AssemblyInfo.cs
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.csproj.CoreCompileInputs.cache
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\bin\Debug\net6.0\senaiClientes.exe
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\bin\Debug\net6.0\senaiClientes.deps.json
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\bin\Debug\net6.0\senaiClientes.runtimeconfig.json
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\bin\Debug\net6.0\senaiClientes.dll
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\bin\Debug\net6.0\senaiClientes.pdb
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.dll
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\refint\senaiClientes.dll
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.pdb
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\senaiClientes.genruntimeconfig.cache
+C:\Users\Solange Grimaldi\Desktop\Senai\senaiClientes\obj\Debug\net6.0\ref\senaiClientes.dll
