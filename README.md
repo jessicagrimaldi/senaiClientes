@@ -1,5 +1,5 @@
 # Senai Clientes
-Sistema de cadastro de clientes que armazena cadastros das pessoas físicas e jurídicas.
+Sistema de cadastro de clientes que armazena dados de pessoas físicas e jurídicas gerando um .txt com as informações recebidas dos usuários.
 
 ### Features
 
@@ -22,10 +22,22 @@ Semelhante as tecnologias utilizadas
 
 ### Execução
 
-**Clone o repositório:** git clone https://github.com/jessicagrimaldi/senaiClientes.git
-  
-**Entre no diretório:** cd [nome-pasta]
+**Clone o repositório:** 
 
-**Execute o projeto:** dotnet run
+```
+git clone https://github.com/jessicagrimaldi/senaiClientes.git
+```
+  
+**Entre no diretório:** 
+
+```
+cd [nome-pasta]
+```
+
+**Execute o projeto:** 
+
+```
+dotnet run
+```
 
 
